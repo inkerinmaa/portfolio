@@ -1,0 +1,77 @@
+.about {
+	position: relative;
+	display: flex;
+	@include laptop {
+		flex-wrap: wrap;
+	}
+}
+
+.about__left, .about__right {
+	display: inline-flex;
+	width: 50%;
+	flex-direction: column;
+	padding-top: 20px;
+	@include laptop {
+		width: 100%;
+	}
+}
+
+.about__left {
+	background-color: #ebefe2;
+}
+
+.about__right {
+	background-color: #f4f5f0;
+}
+
+.about__triangle {
+	height: 150px;
+}
+
+.about__left-title {
+	margin-bottom: 30px;
+	@include large-desktop {
+		width: 50%;
+	}
+}
+
+.about__profile {
+	@include large-desktop {
+		width: 50%;
+	}
+}
+
+.about__left-content {
+	width: 75%;
+	margin: 0 auto;
+	@include large-desktop {
+		display: flex;
+		width: 90%;
+	}
+	@include laptop {
+		width: 60%;
+	}
+	@include phones {
+		width: 100%;
+	}
+}
+
+.about__right-content {
+	width: 90%;
+	margin: 0 auto;
+	@include phones {
+		width: 100%;
+	}
+}
+
+.about__right-text {
+	margin-bottom: 35px;
+	@include laptop {
+		width: 60%;
+		margin: 0 auto 35px;
+	}
+	@include phones {
+		width: 95%;
+		margin: 0 auto 15px;
+	}
+}

@@ -1,0 +1,65 @@
+.btn {
+	display: inline-block;
+	padding: 10px 25px;
+	background-color: $pale-green;
+	font-weight: 500;
+	color: $white;
+	font-size: 16px;
+	transition: background-color .3s, opacity .3s;
+	text-decoration: none;
+	&:hover {
+		background-color: $green;
+		cursor: pointer;
+	}
+}
+
+.btn--view--rounded-transparent {
+	background-color: transparent;
+	border: 1px solid $white;
+	border-radius: 22px;
+	&:hover {
+		border-color: #729e19;
+	}
+}
+
+.btn--view--rounded-green {
+	border: 1px solid $pale-green;
+	border-radius: 22px;
+}
+
+.btn--invisibility {
+	opacity: 0;
+	position: absolute;
+	left: -9999px;
+}
+
+.btn-down, .btn-up {
+	display: block;
+	margin: 0 auto;
+	width: 26px;
+	height: 16px;
+	position: relative;
+	background-color: transparent;
+	padding: 0;
+	z-index: 1;
+	&:hover {
+		.btn-down__icon, .btn-up__icon {
+			opacity: 1;
+		}
+	}
+}
+
+.btn-down {
+	bottom: 70px;
+	@include phones {
+		bottom: 40px;
+	}
+}
+
+.btn-down__icon, .btn-up__icon {
+	transition: .3s;
+	width: 100%;
+	height: 100%;
+	fill: $white;
+	opacity: .7;
+}

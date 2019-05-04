@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Portfolio | Мои работы</title>
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div id="animated-number"></div>
+    <div class="wrapper">
+      <div class="maincontent">
+        <section class="hero">
+          <h2 class="visually-hidden">Страница Мои работы</h2>
+          <header class="header">
+            <div class="header__left">
+              <div class="socials socials--color--green">
+                <ul class="socials__list">
+                  <li class="socials__item"><a class="socials__link" href="//vk.com" target="_blank">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="//github.com" target="_blank">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="//linkedin.com" target="_blank">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__right">
+              <button class="menu-hamburger">
+                <div class="menu-hamburger__lines"></div>
+              </button>
+            </div>
+          </header>
+          <div class="hero__content">
+            <div class="section-title section-title--bg--portfolio"></div>
+            <div class="user hero__user">
+              <div class="user__photo" style="background-image: url('./assets/images/photo.jpg');"></div>
+              <div class="user__description">
+                <div class="user__title">Nikita Gladkiy</div>
+                <div class="user__text">Личный сайт веб разработчика</div>
+              </div>
+            </div>
+          </div><a class="btn-down hero__btn" href="#works">
+            <svg class="btn-down__icon">
+              <use xlink:href="./assets/images/icons/sprite.svg#arrow_down"></use>
+            </svg></a>
+        </section>
+        <main class="works" id="works">
+          <div class="triangles">
+            <svg class="triangle triangles__left" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="0 100, 100 100, 0 0"></polygon>
+            </svg>
+            <svg class="triangle triangles__right" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="0,100 100,0 100,100"></polygon>
+            </svg>
+          </div>
+          <h2 class="visually-hidden">Слайдер Мои Работы</h2>
+          <div class="works__content">
+            <div class="works__title">
+              <h1 class="title-h1 title-h1--works">Мои работы</h1>
+            </div>
+            <div class="slider-container">
+              <div id="slider-component"></div>
+            </div>
+          </div>
+        </main>
+        <section class="about-me">
+          <div class="about-me__content container">
+            <div class="about-me-title">
+              <h2 class="title-h1 title-h1--about-me">Что обо мне <br/> говорят</h2>
+            </div>
+            <div class="reviews">
+              <ul class="reviews__list">
+                <li class="reviews__item">
+                  <div class="reviews__photo" style="background-image: url('./assets/images/avatar-reviews1.jpg');"></div>
+                  <blockquote class="reviews__description">
+                    <div class="reviews__text">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                    <footer class="reviews__author">
+                      <div class="reviews__author-name">Ковальчук Дмитрий</div>
+                      <div class="reviews__author-post">- основатель Loftschool</div>
+                    </footer>
+                  </blockquote>
+                </li>
+                <li class="reviews__item">
+                  <div class="reviews__photo" style="background-image: url('./assets/images/avatar-reviews2.jpg');"></div>
+                  <blockquote class="reviews__description">
+                    <div class="reviews__text">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+                    <footer class="reviews__author">
+                      <div class="reviews__author-name">Сабанцев Владимир</div>
+                      <div class="reviews__author-post">- преподаватель</div>
+                    </footer>
+                  </blockquote>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="feedback-wrapper"></div><a class="btn-up" href="#works">
+            <svg class="btn-up__icon">
+              <use xlink:href="./assets/images/icons/sprite.svg#portf_arrow_up"></use>
+            </svg></a>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer-info">
+            <div class="footer-info__col footer-info__description">
+              <p>Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
+            </div>
+            <div class="footer-info__col footer-info__navigation">
+              <nav class="menu menu--view--transparent footer-info__menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                  <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                  <li class="menu__item"><a class="menu__link" href="./">Авторизация</a></li>
+                </ul>
+              </nav>
+              <div class="socials socials--view--transparent">
+                <ul class="socials__list">
+                  <li class="socials__item"><a class="socials__link" href="//vk.com" target="_blank">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="//github.com" target="_blank">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/images/icons/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="//linkedin.com" target="_blank">
+                      <svg class="socials__icon">
+                        <use xlink:href="./assets/images/icons/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-info__col footer-info__quote text-content">
+              <blockquote>Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.<span class="text-content__author">Martin Golding</span></blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bot">
+          <div class="copyright"><small class="copyright__text">&copy; Nikita Gladkiy | создано с любовью в Loftschool | 2018</small></div>
+        </div>
+      </footer>
+      <div class="fullscreen-menu">
+        <nav class="fullscreen-menu__nav">
+          <ul class="fullscreen-menu__list">
+            <li class="fullscreen-menu__item"><a class="fullscreen-menu__link" href="works.html">Мои работы</a></li>
+            <li class="fullscreen-menu__item"><a class="fullscreen-menu__link" href="about.html">Обо мне</a></li>
+            <li class="fullscreen-menu__item"><a class="fullscreen-menu__link" href="blog.html">Блог</a></li>
+            <li class="fullscreen-menu__item"><a class="fullscreen-menu__link" href="./">Авторизация</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script type="text/x-template" id="skills">
+      <div class="skills">
+        <ul class="skills-list">
+          <li class="skills-list__item" v-for="skill in skills">
+            <skills-row :skill="skill"></skills-row>
+          </li>
+        </ul>
+      </div>
+    </script>
+    <script type="text/x-template" id="skills-row">
+      <div class="skills-row">
+        <div class="skills-row__title">{{skill.skillsGroup}}</div>
+        <ul class="skills-row__list">
+          <li class="skills-row__item" v-for="(skillValue, skillName) in skill.skills">
+            <skill :skillName="skillName" :skillValue="skillValue"></skill>
+          </li>
+        </ul>
+      </div>
+    </script>
+    <script type="text/x-template" id="skill">
+      <figure class="skill" ref="figure">
+        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
+          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40" ref="circle"></circle>
+        </svg>
+        <div class="skill__title">{{skillName}}</div>
+      </figure>
+    </script>
+    <script type="text/x-template" id="feedback">
+      <div class="form about-me__form">
+        <h2 class="title-h2 title-h2--color--white form__title">Связаться со мной</h2>
+        <form class="form__area" @submit.prevent="sendForm" novalidate="true" action="http://niotech.php" method="post">
+          <div class="form__fields">
+            <div class="form__row">
+              <div class="form__field">
+                <label class="form__label form__label_input" for="name">Имя</label>
+                <input class="form__input-text" @invalid="invalidField" type="text" placeholder="Имя" name="name" v-model.trim="name">
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label class="form__label form__label_input" for="email">Email</label>
+                <input class="form__input-text" @invalid="invalidField" type="email" placeholder="Email" name="email" v-model.trim="email">
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label class="form__label form__label_input" for="msg">Ваше сообщение</label>
+                <textarea class="form__input-text form__input-text--textarea" @invalid="invalidField" placeholder="Ваше сообщение" rows="3" name="msg" v-model.trim="msg"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form__row form__row--controls">
+            <button class="form__button form__button-submit" type="submit">Отправить</button>
+            <button class="form__button form__button-clear" type="reset">Очистить</button>
+          </div>
+        </form>
+        <div class="form__success" :class="{&quot;form__success--active&quot;: success == true}">
+          <div class="form__success-message">Сообщение успешно отправлено</div>
+        </div>
+        <div class="form__unsuccess" :class="{&quot;form__unsuccess--active&quot;: unsuccess == true}">
+          <div class="form__unsuccess-message" v-for="error in errors">{{ error }}</div>
+        </div>
+      </div>
+    </script>
+    <script type="text/x-template" id="slider">
+      <div class="slider">
+        <info :work="currentWork"></info>
+        <display :work="currentWork"></display>
+        <buttons :works="works" :currentIndex="currentIndex" @slide="handleSlide"></buttons>
+      </div>
+    </script>
+    <script type="text/x-template" id="slider-info">
+      <div class="slider__item-info">
+        <div class="slider__item-description">
+          <transition-group appear :css="false" @enter="enterHandler">
+            <h2 class="title-h2 slider__item-title" :key="work.title">{{work.title}}</h2>
+          </transition-group>
+          <transition-group appear :css="false" @enter="enterHandler">
+            <div class="slider__item-techonologies" :key="work.skills">{{work.skills}}</div>
+          </transition-group><a class="btn btn--view--rounded-green button" :href="work.link" target="_blank">Посмотреть сайт</a>
+        </div>
+      </div>
+    </script>
+    <script type="text/x-template" id="slider-display">
+      <div class="slider__display">
+        <transition name="fade-out" mode="out-in"><img class="slider__big-pic" :src="work.photo" :key="work.photo"></transition>
+      </div>
+    </script>
+    <script type="text/x-template" id="slider-buttons">
+      <div class="slider__buttons">
+        <div class="slider__button slider__button--prev" @click="slide('prev')">
+          <transition-group class="slider__button-img-container" name="slide-down" tag="div">
+            <div class="slider__button-img-wrap" :key="getReqImage('prev').photo"><img class="slider__button-pic" :src="getReqImage('prev').photo" alt=""></div>
+          </transition-group>
+        </div>
+        <div class="slider__button slider__button--next" @click="slide('next')">
+          <transition-group class="slider__button-img-container" name="slide-up" tag="div">
+            <div class="slider__button-img-wrap" :key="getReqImage('next').photo"><img class="slider__button-pic" :src="getReqImage('next').photo" alt=""></div>
+          </transition-group>
+        </div>
+      </div>
+    </script>
+    <script type="text/x-template" id="preloader">
+      <div class="preloader" :class="{&quot;preloader--hide&quot;: load == true}">
+        <svg class="preloader__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="95.113px" viewbox="0 0 80 95.113" enable-background="new 0 0 80 95.113" xml:space="preserve">
+          <g>
+            <path class="wave wave--1" fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,38.005c6.663,0,6.663,7.801,13.327,7.801            c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801            c6.67,0,6.67,7.801,13.339,7.801S73.33,38.005,80,38.005"></path>
+          </g>
+          <g>
+            <path class="wave wave--2" fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,61.684c6.663,0,6.663,7.801,13.327,7.801            c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801            c6.67,0,6.67,7.801,13.339,7.801S73.33,61.684,80,61.684"></path>
+          </g>
+          <g>
+            <path class="wave wave--3" fill="none" stroke-width="3.9003" stroke-miterlimit="10" d="M0,85.362c6.663,0,6.663,7.801,13.327,7.801            c6.665,0,6.665-7.801,13.33-7.801c6.667,0,6.667,7.801,13.334,7.801c6.666,0,6.666-7.801,13.331-7.801            c6.67,0,6.67,7.801,13.339,7.801S73.33,85.362,80,85.362"></path>
+          </g>
+          <text class="preloader__text" transform="matrix(1 0 0 1 19.9785 20.5957)" font-size="24">{{ animatedNumber }}</text>
+        </svg>
+      </div>
+    </script>
+    <script src="./assets/js/bootloader.bundle.js"></script>
+    <script src="./assets/js/vendor.bundle.js"></script>
+    <script src="./assets/js/works.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+.blog {
+	display: flex;
+	padding-top: 40px;
+	position: relative;
+}
+
+.blog__sidebar {
+	width: 25%;
+	padding-left: 60px;
+	transition: .3s;
+	align-self: flex-start;
+	position: sticky;
+	top: 40px;
+	@include tablets {
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 100%;
+		width: 50%;
+		background-color: $pale-green;
+		z-index: 10;
+	}
+	@include phones {
+		width: 90%;
+	}
+}
+
+.blog__btn {
+	display: none;
+	@include tablets {
+		display: block;
+		cursor: pointer;
+		background-color: $pale-green;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		position: absolute;
+		right: -10px;
+	}
+}
+
+.blog__sidebar--active {
+	right: 50%;
+	@include phones {
+		right: 10%;
+	}
+}
+
+.blog__content {
+	width: 75%;
+	padding-left: 80px;
+	padding-right: 100px;
+	@include tablets {
+		width: 100%;
+		padding: 0 25px;
+	}
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 190px;
+		@include laptop {
+			height: 260px;
+		}
+		@include phones {
+			height: 320px;
+		}
+	}
+}

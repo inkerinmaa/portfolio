@@ -1,0 +1,71 @@
+.menu {
+
+}
+
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu__item {
+	display: inline-block;
+	flex: 1 0 auto;
+	border-right: 2px solid rgba($white, .5);
+	&:last-child {
+		border-right: none;
+	}
+}
+
+.menu__link {
+	display: block;
+	text-align: center;
+	padding: 15px 0;
+	text-decoration: none;
+	font-weight: 500;
+	transition: .3s;
+	color: $white;
+	background-color: $pale-green;
+	&:hover {
+		background-color: $green;
+	}
+}
+
+.welcome__menu {
+	width: 100%;
+}
+
+.footer-info__menu {
+	margin-bottom: 25px;
+	@include phones {
+		margin-bottom: 10px;
+	}
+}
+
+.menu--view--transparent {
+	.menu__list {
+		@include phones {
+			justify-content: space-around;
+		}
+	}
+	.menu__item {
+		border-right: none;
+		margin-right: 20px;
+		flex: initial;
+		&:last-child {
+			margin-right: 0;
+		}
+		@include phones {
+			margin: 0;
+		}
+	}
+	.menu__link {
+		display: inline-block;
+		padding: 0;
+		background-color: transparent;
+		border-bottom: 1px solid transparent;
+		transition: .3s;
+		&:hover {
+			border-bottom: 1px solid $white;
+		}
+	}
+}

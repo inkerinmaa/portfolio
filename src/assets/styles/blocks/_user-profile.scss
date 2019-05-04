@@ -1,0 +1,48 @@
+.user-profile {
+
+}
+
+.user-profile__image {
+	display: block;
+	margin: 0 auto;
+	width: 443px;
+	height: 391px;
+	overflow: hidden;
+	@include desktop {
+		width: 100%;
+	}
+	@include phones {
+		max-height: 350px;
+	}
+}
+
+.user-profile__text {
+	@include phones {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+.user-profile__avatar {
+	width: 100%;
+	height: auto;
+}
+
+.user-profile__description {
+	padding-top: 35px;
+}
+
+.user-profile__title {
+	margin-bottom: 25px;
+}
+
+.about__profile {
+	@include large-desktop {
+		.user-profile__image {
+			width: 100%;
+		}
+	}
+	@include tablets {
+
+	}
+}
